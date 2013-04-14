@@ -1,4 +1,4 @@
 stackTraceangelo
 ================
 
-Digital Michelangelo who draws ASCII art on exception stack trace.
+Few hours more and the proof-of-concept will be there :-).
