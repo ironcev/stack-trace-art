@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackTraceangelo", "StackTr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackTraceangelo.Art", "StackTraceangelo.Art\StackTraceangelo.Art.csproj", "{760A59F6-FA9E-46D6-AC6D-EA805D725E9D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackTraceangelo.DotNet.ArtViewer", "StackTraceangelo.DotNet.ArtViewer\StackTraceangelo.DotNet.ArtViewer.csproj", "{EE5ACC2F-4ED8-4C19-9581-E070972C0BE6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -19,6 +21,10 @@ Global
 		{760A59F6-FA9E-46D6-AC6D-EA805D725E9D}.Debug|x86.Build.0 = Debug|x86
 		{760A59F6-FA9E-46D6-AC6D-EA805D725E9D}.Release|x86.ActiveCfg = Release|x86
 		{760A59F6-FA9E-46D6-AC6D-EA805D725E9D}.Release|x86.Build.0 = Release|x86
+		{EE5ACC2F-4ED8-4C19-9581-E070972C0BE6}.Debug|x86.ActiveCfg = Debug|x86
+		{EE5ACC2F-4ED8-4C19-9581-E070972C0BE6}.Debug|x86.Build.0 = Debug|x86
+		{EE5ACC2F-4ED8-4C19-9581-E070972C0BE6}.Release|x86.ActiveCfg = Release|x86
+		{EE5ACC2F-4ED8-4C19-9581-E070972C0BE6}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

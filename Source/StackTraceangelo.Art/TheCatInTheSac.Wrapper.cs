@@ -1,8 +1,8 @@
 ﻿namespace StackTraceangelo.Art
 {
-    public class TheCatInTheSac
+    public static class TheCatInTheSac
     {
-        public void Paint()
+        public static void Paint()
         {
             new ㅤㅤ().ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ();
         }

@@ -1,8 +1,8 @@
 ﻿namespace StackTraceangelo.Art
 {
-    public class LuluIPatuvaneto
+    public static class LuluIPatuvaneto
     {
-        public void Paint()
+        public static void Paint()
         {
             new \u115f().ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ();
         }

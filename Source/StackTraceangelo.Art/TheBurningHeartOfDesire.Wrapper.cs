@@ -1,8 +1,8 @@
 ﻿namespace StackTraceangelo.Art
 {
-    public class TheBurningHeartOfDesire
+    public static class TheBurningHeartOfDesire
     {
-        public void Paint()
+        public static void Paint()
         {
             new ㅤㅤㅤ().ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ();
         }

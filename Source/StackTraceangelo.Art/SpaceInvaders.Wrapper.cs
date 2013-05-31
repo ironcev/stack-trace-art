@@ -1,8 +1,8 @@
 ﻿namespace StackTraceangelo.Art
 {
-    public class SpaceInvaders
+    public static class SpaceInvaders
     {
-        public void Paint()
+        public static void Paint()
         {
             new ㅤ().ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ();
         }
