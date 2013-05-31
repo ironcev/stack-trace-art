@@ -1,13 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
-using System.Text;
 
 namespace StackTraceangelo
 {
-    static class CharacterReplacements // NOTE-IG: Direct datflow pattern, my favorite :)
+    static class CharacterReplacements // NOTE-IG: Direct dataflow pattern, my favorite :)
     {
         private static Dictionary<char, HashSet<char>> replacements;
 

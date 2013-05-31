@@ -15,8 +15,8 @@ using MessageBox = System.Windows.MessageBox;
 
 namespace StackTraceangelo
 {
-    // TODO-IG: What to do with Tabs and other whitespaces?
-    class MainWindowViewModel : INotifyPropertyChanged // NOTE-IG: This is an intentionally simplified implementation on a prototype level. Real production code comming soon. Stay tuned :)
+    // TODO-IG: Think what to do with Tabs and other whitespaces?
+    class MainWindowViewModel : INotifyPropertyChanged
     {
         private const char HangulFiller = '\u3164';
 
