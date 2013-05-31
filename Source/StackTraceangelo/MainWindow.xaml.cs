@@ -1,4 +1,10 @@
-﻿using System.Windows;
+﻿/*
+ * WARNING!
+ * This source file contains Intentionally Bad Code.
+ * WARNING!
+ */
+
+using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
 

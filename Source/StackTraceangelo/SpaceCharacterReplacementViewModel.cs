@@ -1,4 +1,10 @@
-﻿using System;
+﻿/*
+ * WARNING!
+ * This source file contains Intentionally Bad Code.
+ * WARNING!
+ */
+
+using System;
 
 namespace StackTraceangelo
 {

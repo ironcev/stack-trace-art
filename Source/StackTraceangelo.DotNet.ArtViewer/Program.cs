@@ -1,4 +1,10 @@
-﻿using System;
+﻿/*B
+ * WARNING!
+ * This source file contains Intentionally Bad Code.
+ * WARNING!
+ */
+
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;

@@ -1,4 +1,10 @@
-﻿using System.Collections.Generic;
+﻿/*
+ * WARNING!
+ * This source file contains Intentionally Bad Code.
+ * WARNING!
+ */
+
+using System.Collections.Generic;
 using System.Windows.Controls;
 using System.Windows.Media;
 
