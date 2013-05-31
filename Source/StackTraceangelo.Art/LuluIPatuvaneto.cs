@@ -1,19 +1,6 @@
-﻿using System;
-
-namespace StackTraceangelo.SampleStackTraceArtClasses.ArtClasses
-{
-  class LuluIPatuvaneto
-    {
-        public void Paint()
-        {
-          new \u115f().ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ();
-        }
-    }
-}
-
-/*
+﻿/*
 LuluIPatuvanetoException
-Your program has been attacked by Space Invaders.
+Лу за граници нехае - съчинява си места.
 ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ()
 ㅤㅤㅤㅤㅤㅤㅤㅤㅤЛулуㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ()
 ㅤㅤㅤㅤㅤㅤиㅤпътуванетоㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ()
@@ -28,10 +15,12 @@ Your program has been attacked by Space Invaders.
 ㅤㅤㅤсеㅤстапяㅤвㅤточкаㅤситнаㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ()
 ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ()
 
-Use the below line of code to call the stack trace art method:
-new ㅤ().ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ();
 */
 
+using System;
+
+// ReSharper disable CheckNamespace
+// ReSharper disable InconsistentNaming
 #line 1 ""
 public class \u115f
 {
@@ -42,76 +31,76 @@ public class \u115f
         ㅤㅤㅤсеㅤстапяㅤвㅤточкаㅤситнаㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ();
     }
 #line 1 ""
-    private void ㅤㅤㅤсеㅤстапяㅤвㅤточкаㅤситнаㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ()
+    private static void ㅤㅤㅤсеㅤстапяㅤвㅤточкаㅤситнаㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ()
     {
 #line 1 ""
         ㅤㅤㅤвㅤглаватаㅤсиㅤбезмитнаㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ();
     }
 #line 1 ""
-    private void ㅤㅤㅤвㅤглаватаㅤсиㅤбезмитнаㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ()
+    private static void ㅤㅤㅤвㅤглаватаㅤсиㅤбезмитнаㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ()
     {
 #line 1 ""
         ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ();
     }
 #line 1 ""
-    private void ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ()
+    private static void ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ()
     {
 #line 1 ""
         ㅤㅤㅤизвънㅤреалносттаㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ();
     }
 #line 1 ""
-    private void ㅤㅤㅤизвънㅤреалносттаㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ()
+    private static void ㅤㅤㅤизвънㅤреалносттаㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ()
     {
 #line 1 ""
         ㅤㅤㅤтръгва̦ㅤщомㅤсиㅤпожелаеㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ();
     }
 #line 1 ""
-    private void ㅤㅤㅤтръгва̦ㅤщомㅤсиㅤпожелаеㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ()
+    private static void ㅤㅤㅤтръгва̦ㅤщомㅤсиㅤпожелаеㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ()
     {
 #line 1 ""
         ㅤㅤㅤсъчиняваㅤсиㅤместаㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ();
     }
 #line 1 ""
-    private void ㅤㅤㅤсъчиняваㅤсиㅤместаㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ()
+    private static void ㅤㅤㅤсъчиняваㅤсиㅤместаㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ()
     {
 #line 1 ""
         ㅤㅤㅤЛуㅤзаㅤгранициㅤнехаеㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ();
     }
 #line 1 ""
-    private void ㅤㅤㅤЛуㅤзаㅤгранициㅤнехаеㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ()
+    private static void ㅤㅤㅤЛуㅤзаㅤгранициㅤнехаеㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ()
     {
 #line 1 ""
         ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ();
     }
 #line 1 ""
-    private void ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ()
+    private static void ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ()
     {
 #line 1 ""
         ㅤㅤㅤ__________________________________ㅤㅤㅤㅤㅤㅤㅤㅤ();
     }
 #line 1 ""
-    private void ㅤㅤㅤ__________________________________ㅤㅤㅤㅤㅤㅤㅤㅤ()
+    private static void ㅤㅤㅤ__________________________________ㅤㅤㅤㅤㅤㅤㅤㅤ()
     {
 #line 1 ""
         ㅤㅤㅤㅤㅤㅤиㅤпътуванетоㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ();
     }
 #line 1 ""
-    private void ㅤㅤㅤㅤㅤㅤиㅤпътуванетоㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ()
+    private static void ㅤㅤㅤㅤㅤㅤиㅤпътуванетоㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ()
     {
 #line 1 ""
         ㅤㅤㅤㅤㅤㅤㅤㅤㅤЛулуㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ();
     }
 #line 1 ""
-    private void ㅤㅤㅤㅤㅤㅤㅤㅤㅤЛулуㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ()
+    private static void ㅤㅤㅤㅤㅤㅤㅤㅤㅤЛулуㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ()
     {
 #line 1 ""
         ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ();
     }
 #line 1 ""
-    private void ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ()
+    private static void ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ()
     {
 #line 1 ""
-        throw new LuluIPatuvanetoException("Your program has been attacked by Space Invaders.");
+        throw new LuluIPatuvanetoException("Лу за граници нехае - съчинява си места.");
     }
 }
 
@@ -119,4 +108,5 @@ class LuluIPatuvanetoException : Exception
 {
     public LuluIPatuvanetoException(string message) : base(message) { }
 }
-
+// ReSharper restore InconsistentNaming
+// ReSharper restore CheckNamespace

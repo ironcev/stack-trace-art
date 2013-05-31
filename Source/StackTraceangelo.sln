@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackTraceangelo", "StackTraceangelo\StackTraceangelo.csproj", "{49EF8287-532B-4CED-8E32-64DA5D75F7B7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleStackTraceArtClasses", "SampleStackTraceArtClasses\SampleStackTraceArtClasses.csproj", "{760A59F6-FA9E-46D6-AC6D-EA805D725E9D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackTraceangelo.Art", "StackTraceangelo.Art\StackTraceangelo.Art.csproj", "{760A59F6-FA9E-46D6-AC6D-EA805D725E9D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -297,7 +297,7 @@ namespace StackTraceangelo
         private static void GenerateMethod(StringBuilder sb, MethodVisibility methodVisibility, string methodName, string methodBody)
         {
             sb.AppendLine(@"#line 1 """"");
-            sb.AppendFormat("    {0} void {1}", methodVisibility.ToString().ToLowerInvariant(), methodName);
+            sb.AppendFormat("    {0} {1}void {2}", methodVisibility.ToString().ToLowerInvariant(), methodVisibility == MethodVisibility.Private ? "static " : "", methodName);
             sb.AppendLine();
             sb.AppendLine("    {");
             sb.AppendLine(@"#line 1 """"");
