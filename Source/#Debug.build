@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <DebugProperties>
+      Platform=x86;
+      Configuration=Debug
+    </DebugProperties>
+  </PropertyGroup>
+  <ItemGroup>
+    <Solution Include="StackTraceangelo.sln" />
+  </ItemGroup>
+  <PropertyGroup>
+    <BinDebug>Bin\Debug</BinDebug>
+  </PropertyGroup>
+  <Target Name="Build">
+    <RemoveDir Directories="$(BinDebug)" />
+    <MSBuild Projects="@(Solution)" Properties="$(DebugProperties)" />
+  </Target>
+</Project>
