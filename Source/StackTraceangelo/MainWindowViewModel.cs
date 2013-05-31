@@ -218,34 +218,92 @@ namespace StackTraceangelo
         public string GenerateCode()
         {
             string[] callStack = NormalizeAsciiArt().Reverse().ToArray();
+            string className = SpaceCharacterReplacement.ToString();
 
             StringBuilder sb = new StringBuilder();
-            sb.AppendLine("// Use the line below to call the stack trace art method from your code.");
-            sb.AppendFormat("//new {0}().{1};", SpaceCharacterReplacement, callStack[0]);
-            sb.AppendLine();
-            sb.AppendLine(@"#line 1 """"");
-            sb.AppendFormat(@"public class {0} {{{1}}}", SpaceCharacterReplacement, GenerateClassMethods(callStack, ExceptionName, ExceptionMessage));
+
+            GenerateHeaderComment(sb, className, callStack, ExceptionName, ExceptionMessage);
+
+            GenerateClass(sb, SpaceCharacterReplacement.ToString(), callStack, ExceptionName, ExceptionMessage);
 
             if (!IsStandardException(exceptionName))
-              sb.AppendFormat("class {0}:Exception{{public {0}(string m):base(m){{}}}}", exceptionName);
+              GenerateExceptionClass(sb, exceptionName);
 
             return sb.ToString();
         }
 
-        private static string GenerateClassMethods(string[] callStack, string exceptionName, string exceptionMessage)
+        private static void GenerateExceptionClass(StringBuilder sb, string exceptionName)
         {
-            StringBuilder sb = new StringBuilder();
+            sb.AppendLine();
+            sb.AppendFormat("class {0} : Exception", exceptionName);
+            sb.AppendLine();
+            sb.AppendLine("{");
+            sb.AppendFormat("    public {0}(string message) : base(message) {{}}", exceptionName);
+            sb.AppendLine();
+            sb.AppendLine("}");
+            sb.AppendLine();
+        }
 
-            sb.AppendFormat("public void {0}{{{1};}}", callStack[0], callStack[1]);
+        private static void GenerateHeaderComment(StringBuilder sb, string className, string[] callStack, string exceptionName, string exceptionMessage)
+        {
+            sb.AppendLine("/*");
 
-            for (int i = 1; i < callStack.Length - 1; i++)
-                sb.AppendFormat("private void {0}{{{1};}}", callStack[i], callStack[i + 1]);
+            sb.AppendLine(exceptionName);
 
-            sb.AppendFormat("private void {0}{{throw new {1}(\"{2}\");}}", callStack.Last(), exceptionName, exceptionMessage);
+            sb.AppendLine(exceptionMessage);
+
+            foreach (string line in callStack.Reverse())
+            {
+                sb.AppendLine(line);
+            }
 
             sb.AppendLine();
+            sb.AppendLine("Use the below line of code to call the stack trace art method:");
+            sb.AppendFormat("new {0}().{1};", className, callStack[0]);
+            sb.AppendLine();
 
-            return sb.ToString();
+            sb.AppendLine("*/");
+            sb.AppendLine();
+        }
+
+        private static void GenerateClass(StringBuilder sb, string className, string[] callStack, string exceptionName, string exceptionMessage)
+        {
+            sb.AppendLine(@"#line 1 """"");
+            sb.AppendFormat("public class {0}", className);
+            sb.AppendLine();
+            sb.AppendLine("{");
+
+            GenerateClassMethods(sb, callStack, exceptionName, exceptionMessage);
+
+            sb.AppendLine("}");
+        }
+
+        private static void GenerateClassMethods(StringBuilder sb, string[] callStack, string exceptionName, string exceptionMessage)
+        {
+            GenerateMethod(sb, MethodVisibility.Public, callStack[0], callStack[1]);
+
+            for (int i = 1; i < callStack.Length - 1; i++)
+                GenerateMethod(sb, MethodVisibility.Private, callStack[i], callStack[i + 1]);
+
+            GenerateMethod(sb, MethodVisibility.Private, callStack.Last(), string.Format("throw new {0}(\"{1}\")", exceptionName, exceptionMessage));
+        }
+
+        enum MethodVisibility
+        {
+            Public,
+            Private
+        }
+
+        private static void GenerateMethod(StringBuilder sb, MethodVisibility methodVisibility, string methodName, string methodBody)
+        {
+            sb.AppendLine(@"#line 1 """"");
+            sb.AppendFormat("    {0} void {1}", methodVisibility.ToString().ToLowerInvariant(), methodName);
+            sb.AppendLine();
+            sb.AppendLine("    {");
+            sb.AppendLine(@"#line 1 """"");
+            sb.AppendFormat("        {0};", methodBody);
+            sb.AppendLine();
+            sb.AppendLine("    }");
         }
 
         private static string[] standardExceptions;
