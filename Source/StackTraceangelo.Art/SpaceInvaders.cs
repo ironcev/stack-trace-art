@@ -18,6 +18,7 @@ using System;
 
 // ReSharper disable CheckNamespace
 // ReSharper disable InconsistentNaming
+#pragma warning disable 1709 // warning CS1709: Filename specified for preprocessor directive is empty
 #line 1 ""
 public class ㅤ
 {
@@ -87,5 +88,6 @@ class SpaceInvadersException : Exception
 {
     public SpaceInvadersException(string message) : base(message) { }
 }
+#pragma warning restore 1709 // warning CS1709: Filename specified for preprocessor directive is empty
 // ReSharper restore InconsistentNaming
 // ReSharper restore CheckNamespace

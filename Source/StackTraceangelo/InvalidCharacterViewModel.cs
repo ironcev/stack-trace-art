@@ -80,7 +80,9 @@ namespace StackTraceangelo
                 return true;
             }
 
+#pragma warning disable 0067 // warning CS0067: The event is never used
             public event EventHandler CanExecuteChanged;
+#pragma warning restore 0067 // warning CS0067: The event is never used
         }
     }
 
@@ -127,7 +129,9 @@ namespace StackTraceangelo
                 return true;
             }
 
+#pragma warning disable 0067 // warning CS0067: The event is never used
             public event EventHandler CanExecuteChanged;
+#pragma warning restore 0067 // warning CS0067: The event is never used
         }
     }
 }

@@ -230,10 +230,15 @@ namespace StackTraceangelo
 
             GenerateHeaderComment(sb, className, callStack, ExceptionName, ExceptionMessage);
 
+            sb.AppendLine("#pragma warning disable 1709 // warning CS1709: Filename specified for preprocessor directive is empty");
+            sb.AppendLine();
+
             GenerateClass(sb, SpaceCharacterReplacement.ToString(), callStack, ExceptionName, ExceptionMessage);
 
             if (!IsStandardException(exceptionName))
               GenerateExceptionClass(sb, exceptionName);
+
+            sb.AppendLine("#pragma warning restore 1709 // warning CS1709: Filename specified for preprocessor directive is empty");
 
             return sb.ToString();
         }
@@ -359,7 +364,9 @@ namespace StackTraceangelo
                 return true;
             }
 
+#pragma warning disable 0067 // warning CS0067: The event is never used
             public event EventHandler CanExecuteChanged;
+#pragma warning restore 0067 // warning CS0067: The event is never used
         }
 
         class SetFontCommand : ICommand
@@ -388,7 +395,9 @@ namespace StackTraceangelo
                 return true;
             }
 
+#pragma warning disable 0067 // warning CS0067: The event is never used
             public event EventHandler CanExecuteChanged;
+#pragma warning restore 0067 // warning CS0067: The event is never used
         }
     }
 }
