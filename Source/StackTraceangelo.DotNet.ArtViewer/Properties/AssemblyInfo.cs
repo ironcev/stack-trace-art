@@ -1,36 +1,16 @@
 ﻿using System.Reflection;
-using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-[assembly: AssemblyTitle("StackTraceangelo.DotNet.ArtViewer")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("StackTraceangelo.DotNet.ArtViewer")]
-[assembly: AssemblyCopyright("Copyright ©  2013")]
+[assembly: AssemblyTitle("StackTraceangelo .NET art viewer")]
+[assembly: AssemblyDescription("Viewer of the Stack Trace Art libraries that are stored in .NET assemblies.")]
+[assembly: AssemblyConfiguration("")] // TODO-IG: Define proper assembly configuration.
+[assembly: AssemblyCompany("Igor Roncevic")]
+[assembly: AssemblyProduct("stackTraceangelo")]
+[assembly: AssemblyCopyright("Copyright © 2013 Igor Roncevic")]
 [assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
 
-// Setting ComVisible to false makes the types in this assembly not visible 
-// to COM components.  If you need to access a type in this assembly from 
-// COM, set the ComVisible attribute to true on that type.
 [assembly: ComVisible(false)]
 
-// The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("fecfb0d8-4645-42f4-a8f8-57e769399c8b")]
-
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Build and Revision Numbers 
-// by using the '*' as shown below:
-// [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.0.0")]
-[assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: AssemblyVersion("0.0.1.*")]
+[assembly: AssemblyFileVersion("0.0.1.*")]
+[assembly: AssemblyInformationalVersion("0.0.1.*")]
