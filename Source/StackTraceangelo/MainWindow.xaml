@@ -1,0 +1,63 @@
+﻿<Window x:Class="StackTraceangelo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="470" Width="630"
+        Loaded="OnWindowLoaded" WindowStartupLocation="CenterScreen" WindowState="Maximized">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="50*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="50*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <TextBox Grid.Row="0" Text="{Binding Path=ExceptionName, UpdateSourceTrigger=PropertyChanged}"/>
+        <TextBox Grid.Row="1" Text="{Binding Path=ExceptionMessage, UpdateSourceTrigger=PropertyChanged}"/>
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <TextBox Grid.Row="2" Text="{Binding Path=AsciiArt, UpdateSourceTrigger=PropertyChanged}" FontFamily="{Binding Path=Font}" AcceptsReturn="True"/>
+            <StackPanel Grid.Column="1" Orientation="Vertical">
+                <TextBox Text="{Binding Path=RightMargine}" Width="50" ToolTip="Right margine."/>
+                <Button Content="Font" Command="{Binding Path=SetFont}"/>
+                <ComboBox ToolTip="{Binding Path=SpaceCharacterReplacementCharacters/CharacterName}" IsEditable="False"
+                          DisplayMemberPath="UnicodeValue" SelectedValuePath="Character"  SelectedValue="{Binding Path=SpaceCharacterReplacement}" ItemsSource="{Binding Path=SpaceCharacterReplacementCharacters}"
+                          IsSynchronizedWithCurrentItem="True"/>
+            </StackPanel>
+        </Grid>
+        <ItemsControl Grid.Row="3" FlowDirection="LeftToRight" ItemsSource="{Binding InvalidCharacters}">
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBox Text="{Binding Path=Character, Mode=OneWay}" Width="Auto" IsReadOnly="True"/>
+                        <Button Content="▼" Height="Auto" ToolTip="Replace with..." Click="OnButtonClick" Foreground="{Binding Path=ButtonForeground}">
+                            <Button.ContextMenu>
+                                <ContextMenu ItemsSource="{Binding StandardReplacements}" Visibility="Hidden" Closed="OnContextMenuClosed">
+                                    <ContextMenu.ItemContainerStyle>
+                                            <Style TargetType="MenuItem">
+                                                <Setter Property="Header" Value="{Binding Text}" />
+                                                <Setter Property="Command" Value="{Binding ReplaceCharacter}" />
+                                            </Style>
+                                    </ContextMenu.ItemContainerStyle>
+                                </ContextMenu>
+                            </Button.ContextMenu>
+                        </Button>
+                    </StackPanel>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <VirtualizingStackPanel Orientation="Horizontal"/>
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+        </ItemsControl>
+        <TextBox Grid.Row="4" Text="{Binding Path=Preview, Mode=OneWay}" IsReadOnly="True" FontFamily="{Binding Path=Font}"/>
+        <StackPanel Grid.Row="5">
+            <Button Content="Generate stack trace art class and copy it to clipboard" Command="{Binding Path=GenerateCSharpCode}"/>
+        </StackPanel>
+    </Grid>
+</Window>

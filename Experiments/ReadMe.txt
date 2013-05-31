@@ -1,0 +1,1 @@
+This folder contains different experiments which are done mostly to learn something or try something out.
