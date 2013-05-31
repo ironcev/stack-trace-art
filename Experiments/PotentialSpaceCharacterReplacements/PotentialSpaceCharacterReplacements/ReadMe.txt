@@ -1,4 +1,4 @@
-﻿This experiments tried to identify characters that could be used as a replacement for the space character.
+﻿This experiment tried to identify characters that could be used as replacements for the space character.
 
 The following characters were identified:
 0559
@@ -57,7 +57,7 @@ Just in case we need them in the code later on:
                                '\uFE76', '\uFE78', '\uFE7C', '\uFE7E', '\uFEFF', '\uFFA0', '\uFFF9', '\uFFFA', '\uFFFB'
                            }
 
-Only the following four can actually be used like space character replacements:
+Only the following four can actually be used as space character replacements:
 
 '\u115F'	"Hangul choseong filler"
 '\u1160'	"Hangul jungseong filler"
