@@ -25,6 +25,6 @@ Just by using [the library of already created art](/Source/StackTraceangelo.Art)
 
 
 ##Rekindle Your Artistic Soul
-The best way to start rekindling your artistic soul and learn how to efficiently use *stackTraceangelo* is to visit [its official YouTube channel](http://www.youtube.com/user/stackTraceangelo). Although being in its early, proof-of-concept stage, *stackTraceangelo* is mature enough to help you draw your own piece of Stack Trace Art. So, download it, create some cool pieces of stack trace art and inject it into other programmer's code.
+The best way to start rekindling your artistic soul and learn how to efficiently use *stackTraceangelo* is to visit [its official YouTube channel](http://www.youtube.com/user/stackTraceangelo). Although being in early proof-of-concept stage, *stackTraceangelo* is mature enough to help you draw your own piece of Stack Trace Art. So, download it, create some cool pieces of Stack Trace Art and inject them into other programmer's code.
 
 After you do so, please don't forget to share your art with me. I'll be happy to see it.
