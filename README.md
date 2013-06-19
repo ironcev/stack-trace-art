@@ -1,11 +1,11 @@
 #stackTraceangelo
 
-StackTraceangelo is a [Stack Trace Art](http://www.thehumbleprogrammer.com/stack-trace-art) editor.
+*StackTraceangelo* is a [Stack Trace Art](http://www.thehumbleprogrammer.com/stack-trace-art) editor.
 
-##What can I do with it?
-You can use it to express and communicate yourself to other programmers by drawing a piece of art on an exception stack trace.
+##Communicate Yourself
+*StackTraceangelo* will help you to express and communicate yourself to other programmers in a very unique way - by drawing a piece of art on exception stack trace.
 
-For example, you can:
+Just by using [the library of already created art](/Source/StackTraceangelo.Art) you can easily:
 
 * tell to your colleagues to [be careful the cat](http://www.youtube.com/watch?v=tPAJomPCdZs)
 
@@ -24,4 +24,7 @@ For example, you can:
     ![Lulu i patuvaneto](https://dl.dropboxusercontent.com/u/110510589/2013/stack-trace-art/004_Lulu_i_patuvaneto.png "Lulu i patuvaneto")
 
 
+##Rekindle Your Artistic Soul
+The best way to start rekindling your artistic soul and learn how to efficiently use *stackTraceangelo* is to visit [its official YouTube channel](http://www.youtube.com/user/stackTraceangelo). Although being in its early, proof-of-concept stage, *stackTraceangelo* is mature enough to help you draw your own piece of Stack Trace Art. So, download it, create some cool pieces of stack trace art and inject it into other programmer's code.
 
+After you do so, please don't forget to share your art with me. I'll be happy to see it.
