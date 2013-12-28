@@ -46,6 +46,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GoodJob.cs" />
+    <Compile Include="GoodJob.Wrapper.cs">
+      <DependentUpon>GoodJob.cs</DependentUpon>
+    </Compile>
     <Compile Include="LuluIPatuvaneto.cs" />
     <Compile Include="LuluIPatuvaneto.Wrapper.cs">
       <DependentUpon>LuluIPatuvaneto.cs</DependentUpon>
@@ -100,6 +104,14 @@
   <ItemGroup>
     <None Include="TheCatInTheSac.png">
       <DependentUpon>TheCatInTheSac.cs</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GoodJob.png">
+      <DependentUpon>GoodJob.cs</DependentUpon>
+    </None>
+    <None Include="GoodJob.txt">
+      <DependentUpon>GoodJob.cs</DependentUpon>
     </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
