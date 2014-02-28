@@ -50,6 +50,10 @@
     <Compile Include="GoodJob.Wrapper.cs">
       <DependentUpon>GoodJob.cs</DependentUpon>
     </Compile>
+    <Compile Include="LuluIKakSePraviDaga.cs" />
+    <Compile Include="LuluIKakSePraviDaga.Wrapper.cs">
+      <DependentUpon>LuluIKakSePraviDaga.cs</DependentUpon>
+    </Compile>
     <Compile Include="LuluIPatuvaneto.cs" />
     <Compile Include="LuluIPatuvaneto.Wrapper.cs">
       <DependentUpon>LuluIPatuvaneto.cs</DependentUpon>
@@ -112,6 +116,14 @@
     </None>
     <None Include="GoodJob.txt">
       <DependentUpon>GoodJob.cs</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="LuluIKakSePraviDaga.png">
+      <DependentUpon>LuluIKakSePraviDaga.cs</DependentUpon>
+    </None>
+    <None Include="LuluIKakSePraviDaga.txt">
+      <DependentUpon>LuluIKakSePraviDaga.cs</DependentUpon>
     </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
