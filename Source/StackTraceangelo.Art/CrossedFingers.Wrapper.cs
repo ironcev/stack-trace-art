@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace StackTraceangelo.Art
+﻿namespace StackTraceangelo.Art
 {
     public static class CrossedFingers
     {
