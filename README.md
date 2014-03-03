@@ -5,7 +5,7 @@
 ##Communicate Yourself
 *StackTraceangelo* will help you to express and communicate yourself to other programmers in a very unique way - by drawing a piece of art on exception stack trace.
 
-Just by using [the *StackTraceangelo* Art Gallery](/Source/ArtGallery/ArtGallery.md) you can easily:
+Just by using [the *stackTraceangelo* Art Gallery](/Source/ArtGallery/ArtGallery.md) you can easily:
 
 * tell to your colleagues to [be careful the cat](http://www.youtube.com/watch?v=tPAJomPCdZs)
 
