@@ -95,47 +95,43 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="LuluIPatuvaneto.png">
-      <DependentUpon>LuluIPatuvaneto.cs</DependentUpon>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="SpaceInvaders.png">
-      <DependentUpon>SpaceInvaders.cs</DependentUpon>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="TheBurningHeartOfDesire.png">
-      <DependentUpon>TheBurningHeartOfDesire.cs</DependentUpon>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="TheCatInTheSac.png">
-      <DependentUpon>TheCatInTheSac.cs</DependentUpon>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="GoodJob.png">
-      <DependentUpon>GoodJob.cs</DependentUpon>
-    </None>
     <None Include="GoodJob.txt">
       <DependentUpon>GoodJob.cs</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="LuluIKakSePraviDaga.png">
-      <DependentUpon>LuluIKakSePraviDaga.cs</DependentUpon>
-    </None>
     <None Include="LuluIKakSePraviDaga.txt">
       <DependentUpon>LuluIKakSePraviDaga.cs</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="CrossedFingers.png">
-      <DependentUpon>CrossedFingers.cs</DependentUpon>
-    </None>
     <None Include="CrossedFingers.txt">
       <DependentUpon>CrossedFingers.cs</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\ArtGallery\CrossedFingers.png">
+      <Link>ArtGallery\CrossedFingers.png</Link>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\ArtGallery\GoodJob.png">
+      <Link>ArtGallery\GoodJob.png</Link>
+    </None>
+    <None Include="..\..\ArtGallery\LuluIKakSePraviDaga.png">
+      <Link>ArtGallery\LuluIKakSePraviDaga.png</Link>
+    </None>
+    <None Include="..\..\ArtGallery\LuluIPatuvaneto.png">
+      <Link>ArtGallery\LuluIPatuvaneto.png</Link>
+    </None>
+    <None Include="..\..\ArtGallery\SpaceInvaders.png">
+      <Link>ArtGallery\SpaceInvaders.png</Link>
+    </None>
+    <None Include="..\..\ArtGallery\TheBurningHeartOfDesire.png">
+      <Link>ArtGallery\TheBurningHeartOfDesire.png</Link>
+    </None>
+    <None Include="..\..\ArtGallery\TheCatInTheSac.png">
+      <Link>ArtGallery\TheCatInTheSac.png</Link>
     </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
