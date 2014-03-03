@@ -1,11 +1,13 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackTraceangelo", "StackTraceangelo\StackTraceangelo.csproj", "{49EF8287-532B-4CED-8E32-64DA5D75F7B7}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet.Art", "DotNet.Art\DotNet.Art.csproj", "{760A59F6-FA9E-46D6-AC6D-EA805D725E9D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackTraceangelo.Art", "StackTraceangelo.Art\StackTraceangelo.Art.csproj", "{760A59F6-FA9E-46D6-AC6D-EA805D725E9D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProofOfConcept", "ProofOfConcept\ProofOfConcept.csproj", "{49EF8287-532B-4CED-8E32-64DA5D75F7B7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackTraceangelo.DotNet.ArtViewer", "StackTraceangelo.DotNet.ArtViewer\StackTraceangelo.DotNet.ArtViewer.csproj", "{EE5ACC2F-4ED8-4C19-9581-E070972C0BE6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProofOfConcept.DotNet.ArtViewer", "ProofOfConcept.DotNet.ArtViewer\ProofOfConcept.DotNet.ArtViewer.csproj", "{EE5ACC2F-4ED8-4C19-9581-E070972C0BE6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +15,14 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{49EF8287-532B-4CED-8E32-64DA5D75F7B7}.Debug|x86.ActiveCfg = Debug|x86
-		{49EF8287-532B-4CED-8E32-64DA5D75F7B7}.Debug|x86.Build.0 = Debug|x86
-		{49EF8287-532B-4CED-8E32-64DA5D75F7B7}.Release|x86.ActiveCfg = Release|x86
-		{49EF8287-532B-4CED-8E32-64DA5D75F7B7}.Release|x86.Build.0 = Release|x86
 		{760A59F6-FA9E-46D6-AC6D-EA805D725E9D}.Debug|x86.ActiveCfg = Debug|x86
 		{760A59F6-FA9E-46D6-AC6D-EA805D725E9D}.Debug|x86.Build.0 = Debug|x86
 		{760A59F6-FA9E-46D6-AC6D-EA805D725E9D}.Release|x86.ActiveCfg = Release|x86
 		{760A59F6-FA9E-46D6-AC6D-EA805D725E9D}.Release|x86.Build.0 = Release|x86
+		{49EF8287-532B-4CED-8E32-64DA5D75F7B7}.Debug|x86.ActiveCfg = Debug|x86
+		{49EF8287-532B-4CED-8E32-64DA5D75F7B7}.Debug|x86.Build.0 = Debug|x86
+		{49EF8287-532B-4CED-8E32-64DA5D75F7B7}.Release|x86.ActiveCfg = Release|x86
+		{49EF8287-532B-4CED-8E32-64DA5D75F7B7}.Release|x86.Build.0 = Release|x86
 		{EE5ACC2F-4ED8-4C19-9581-E070972C0BE6}.Debug|x86.ActiveCfg = Debug|x86
 		{EE5ACC2F-4ED8-4C19-9581-E070972C0BE6}.Debug|x86.Build.0 = Debug|x86
 		{EE5ACC2F-4ED8-4C19-9581-E070972C0BE6}.Release|x86.ActiveCfg = Release|x86
