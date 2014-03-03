@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet.Art", "DotNet.Art\DotNet.Art.csproj", "{760A59F6-FA9E-46D6-AC6D-EA805D725E9D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArtGallery.DotNet", "ArtGallery\DotNet\ArtGallery.DotNet.csproj", "{760A59F6-FA9E-46D6-AC6D-EA805D725E9D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProofOfConcept", "ProofOfConcept\ProofOfConcept.csproj", "{49EF8287-532B-4CED-8E32-64DA5D75F7B7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProofOfConcept.Editor", "ProofOfConcept\Editor\ProofOfConcept.Editor.csproj", "{49EF8287-532B-4CED-8E32-64DA5D75F7B7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProofOfConcept.DotNet.ArtViewer", "ProofOfConcept.DotNet.ArtViewer\ProofOfConcept.DotNet.ArtViewer.csproj", "{EE5ACC2F-4ED8-4C19-9581-E070972C0BE6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProofOfConcept.DotNet.ArtViewer", "ProofOfConcept\DotNet.ArtViewer\ProofOfConcept.DotNet.ArtViewer.csproj", "{EE5ACC2F-4ED8-4C19-9581-E070972C0BE6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
