@@ -356,8 +356,6 @@ namespace StackTraceangelo.ProofOfConcept.Editor
                 }
 
                 Clipboard.SetText(mainWindowViewModel.GenerateCode());
-
-                MessageBox.Show("Stack trace art class has been copied to the clipboard. Paste it to your project and call the art method to throw the exception.");
             }
 
             public bool CanExecute(object parameter)
