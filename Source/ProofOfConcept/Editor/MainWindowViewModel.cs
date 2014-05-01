@@ -229,8 +229,13 @@ namespace StackTraceangelo.ProofOfConcept.Editor
 
             StringBuilder sb = new StringBuilder();
 
+            sb.AppendLine("using System;");
+            sb.AppendLine();
+
             GenerateHeaderComment(sb, className, callStack, ExceptionName, ExceptionMessage);
 
+            sb.AppendLine("// ReSharper disable CheckNamespace");
+            sb.AppendLine("// ReSharper disable InconsistentNaming");
             sb.AppendLine("#pragma warning disable 1709 // warning CS1709: Filename specified for preprocessor directive is empty");
             sb.AppendLine();
 
@@ -240,6 +245,8 @@ namespace StackTraceangelo.ProofOfConcept.Editor
               GenerateExceptionClass(sb, exceptionName);
 
             sb.AppendLine("#pragma warning restore 1709 // warning CS1709: Filename specified for preprocessor directive is empty");
+            sb.AppendLine("// ReSharper restore InconsistentNaming");
+            sb.AppendLine("// ReSharper restore CheckNamespace");
 
             return sb.ToString();
         }
