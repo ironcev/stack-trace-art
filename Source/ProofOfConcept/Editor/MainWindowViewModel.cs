@@ -9,12 +9,14 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
 using System.Globalization;
+using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Windows.Data;
 using System.Windows.Forms;
 using System.Windows.Input;
+using StackTraceangelo.ProofOfConcept.Core;
 using StackTraceangelo.ProofOfConcept.Editor.Properties;
 using Clipboard = System.Windows.Clipboard;
 using FontFamily = System.Windows.Media.FontFamily;
@@ -74,6 +76,8 @@ namespace StackTraceangelo.ProofOfConcept.Editor
 
         public ICollectionView SpaceCharacterReplacementCharacters { get; private set; }
 
+        public ICollectionView StackTraceArtGenerators { get; private set; }
+
         private char spaceCharacterReplacement;
         public char SpaceCharacterReplacement
         {
@@ -108,8 +112,25 @@ namespace StackTraceangelo.ProofOfConcept.Editor
                             }
                     );
 
+            StackTraceArtGenerators = CollectionViewSource.GetDefaultView(GetStackTraceArtGenerators());
+
             GenerateCSharpCode = new GenerateCSharpCodeCommand(this);
             SetFont = new SetFontCommand(this);
+        }
+
+        private static IEnumerable<StackTraceArtGenerator> GetStackTraceArtGenerators()
+        {
+            IEnumerable<Type> result = Enumerable.Empty<Type>();
+
+            var potentialArtLibraries = Directory.EnumerateFiles(Path.GetDirectoryName(Assembly.GetEntryAssembly().Location) ?? string.Empty /* To silent ReSharper.*/, "*.dll");
+
+            foreach (string potentialArtLibrary in potentialArtLibraries)
+            {
+                Assembly potentialArtLibraryAssembly = Assembly.LoadFrom(potentialArtLibrary);
+                result = result.Concat(potentialArtLibraryAssembly.GetTypes().Where(type => !type.IsAbstract && typeof(StackTraceArtGenerator).IsAssignableFrom(type)));
+            }
+
+            return result.Select(Activator.CreateInstance).Cast<StackTraceArtGenerator>();
         }
 
         private string CreatePreview()

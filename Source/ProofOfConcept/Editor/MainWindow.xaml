@@ -8,15 +8,18 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
             <RowDefinition Height="50*" />
             <RowDefinition Height="Auto" />
             <RowDefinition Height="50*" />
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
-
-        <TextBox Grid.Row="0" Text="{Binding Path=ExceptionName, UpdateSourceTrigger=PropertyChanged}"/>
-        <TextBox Grid.Row="1" Text="{Binding Path=ExceptionMessage, UpdateSourceTrigger=PropertyChanged}"/>
-        <Grid Grid.Row="2">
+        <ComboBox Grid.Row="0" ToolTip="{Binding Path=StackTraceArtGenerators/Name}" IsEditable="False"
+                               DisplayMemberPath="Name" ItemsSource="{Binding Path=StackTraceArtGenerators}"
+                               IsSynchronizedWithCurrentItem="True" />
+        <TextBox Grid.Row="1" Text="{Binding Path=ExceptionName, UpdateSourceTrigger=PropertyChanged}"/>
+        <TextBox Grid.Row="2" Text="{Binding Path=ExceptionMessage, UpdateSourceTrigger=PropertyChanged}"/>
+        <Grid Grid.Row="3">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="100*" />
                 <ColumnDefinition Width="Auto" />
@@ -27,10 +30,10 @@
                 <Button Content="Font" Command="{Binding Path=SetFont}"/>
                 <ComboBox ToolTip="{Binding Path=SpaceCharacterReplacementCharacters/CharacterName}" IsEditable="False"
                           DisplayMemberPath="UnicodeValue" SelectedValuePath="Character"  SelectedValue="{Binding Path=SpaceCharacterReplacement}" ItemsSource="{Binding Path=SpaceCharacterReplacementCharacters}"
-                          IsSynchronizedWithCurrentItem="True"/>
+                          IsSynchronizedWithCurrentItem="True" Margin="-1,0,0.6,0"/>
             </StackPanel>
         </Grid>
-        <ItemsControl Grid.Row="3" FlowDirection="LeftToRight" ItemsSource="{Binding InvalidCharacters}">
+        <ItemsControl Grid.Row="4" FlowDirection="LeftToRight" ItemsSource="{Binding InvalidCharacters}">
             <ItemsControl.ItemTemplate>
                 <DataTemplate DataType="Editor:InvalidCharacterViewModel">
                     <StackPanel Orientation="Horizontal">
@@ -58,8 +61,8 @@
                 </ItemsPanelTemplate>
             </ItemsControl.ItemsPanel>
         </ItemsControl>
-        <TextBox Grid.Row="4" Text="{Binding Path=Preview, Mode=OneWay}" IsReadOnly="True" FontFamily="{Binding Path=Font}"/>
-        <StackPanel Grid.Row="5">
+        <TextBox Grid.Row="5" Text="{Binding Path=Preview, Mode=OneWay}" IsReadOnly="True" FontFamily="{Binding Path=Font}"/>
+        <StackPanel Grid.Row="6">
             <Button Content="Generate the stack trace art class and copy it to the clipboard" Command="{Binding Path=GenerateCSharpCode}"/>
         </StackPanel>
     </Grid>
