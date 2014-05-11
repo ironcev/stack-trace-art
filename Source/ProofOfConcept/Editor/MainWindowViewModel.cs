@@ -65,7 +65,7 @@ namespace StackTraceangelo.ProofOfConcept.Editor
 
         public string Preview
         {
-            get { return ((StackTraceArtGenerator)StackTraceArtGenerators.CurrentItem).GeneratePreview(SpaceCharacterReplacement.ToString(), ExceptionName, ExceptionMessage, NormalizeAsciiArt()); }
+            get { return StackTraceArtGenerator.GeneratePreview(SpaceCharacterReplacement.ToString(CultureInfo.InvariantCulture), ExceptionName, ExceptionMessage, NormalizeAsciiArt()); }
         }
 
         public IEnumerable<InvalidCharacterViewModel> InvalidCharacters
@@ -76,6 +76,10 @@ namespace StackTraceangelo.ProofOfConcept.Editor
         public ICollectionView SpaceCharacterReplacementCharacters { get; private set; }
 
         public ICollectionView StackTraceArtGenerators { get; private set; }
+        public StackTraceArtGenerator StackTraceArtGenerator
+        {
+            get { return (StackTraceArtGenerator) StackTraceArtGenerators.CurrentItem; }
+        }
 
         private char spaceCharacterReplacement;
         public char SpaceCharacterReplacement
@@ -89,7 +93,7 @@ namespace StackTraceangelo.ProofOfConcept.Editor
             }
         }
 
-        public ICommand GenerateCSharpCode { get; private set; }
+        public ICommand GenerateStackTraceArtClass { get; private set; }
         public ICommand SetFont { get; private set; }
 
         public MainWindowViewModel()
@@ -113,7 +117,7 @@ namespace StackTraceangelo.ProofOfConcept.Editor
 
             StackTraceArtGenerators = CollectionViewSource.GetDefaultView(GetStackTraceArtGenerators());
 
-            GenerateCSharpCode = new GenerateCSharpCodeCommand(this);
+            GenerateStackTraceArtClass = new GenerateStackTraceArtClassCommand(this);
             SetFont = new SetFontCommand(this);
         }
 
@@ -174,49 +178,16 @@ namespace StackTraceangelo.ProofOfConcept.Editor
             return sb.ToString();
         }
 
-        private static IEnumerable<char> GetInvalidCharacters(string text)
+        private IEnumerable<char> GetInvalidCharacters(string text)
         {
-            return new HashSet<char>(text.Replace("\n", string.Empty).Replace("\r", string.Empty)).Where(c => !IsValidCharacterForCSharpIdentifier(c));
+            return new HashSet<char>(text.Replace("\n", string.Empty).Replace("\r", string.Empty)).Where(c => !StackTraceArtGenerator.IsValidCharacter(c));
         }
 
-        static readonly UnicodeCategory[] allowedCharacters = 
-                                        {
-                                            UnicodeCategory.UppercaseLetter, UnicodeCategory.LowercaseLetter,
-                                            UnicodeCategory.TitlecaseLetter, UnicodeCategory.ModifierLetter,
-                                            UnicodeCategory.OtherLetter, UnicodeCategory.LetterNumber,
-                                            UnicodeCategory.DecimalDigitNumber,
-                                            UnicodeCategory.ConnectorPunctuation,
-                                            UnicodeCategory.NonSpacingMark,
-                                            UnicodeCategory.Format
-                                        };
-
-        internal static bool IsValidCharacterForCSharpIdentifier(char character)
-        {
-            /*
-             * http://notes.jschutz.net/2007/11/unicode-character-classes/
-             * http://msdn.microsoft.com/en-us/library/aa664670(v=vs.71).aspx
-               identifier-part-character:
-                    letter-character : A Unicode character of classes Lu (Uppercase_Letter), Ll (Lowercase_Letter), Lt (Titlecase_Letter), Lm (Modifier_Letter), Lo (Other_Letter), or Nl (Letter_Number)
-                    decimal-digit-character : A Unicode character of the class Nd (Decimal_Number)
-                    connecting-character : A Unicode character of the class Pc (Connector_Punctuation)
-                    combining-character : A Unicode character of classes Mn or Mc (Nonspacing_Mark)
-                    formatting-character : A Unicode character of the class Cf (Format)
-             */
-
-            return allowedCharacters.Contains(char.GetUnicodeCategory(character));
-        }
-
-        public string GenerateStackTraceArtClass()
-        {
-            StackTraceArtGenerator generator = (StackTraceArtGenerator)(StackTraceArtGenerators.CurrentItem);
-            return generator.GenerateStackTraceArtClass(SpaceCharacterReplacement.ToString(CultureInfo.InvariantCulture), ExceptionName, ExceptionMessage, NormalizeAsciiArt().Reverse().ToArray());
-        }
-
-        class GenerateCSharpCodeCommand : ICommand
+        class GenerateStackTraceArtClassCommand : ICommand
         {
             private readonly MainWindowViewModel mainWindowViewModel;
 
-            public GenerateCSharpCodeCommand(MainWindowViewModel mainWindowViewModel)
+            public GenerateStackTraceArtClassCommand(MainWindowViewModel mainWindowViewModel)
             {
                 this.mainWindowViewModel = mainWindowViewModel;
             }
@@ -229,7 +200,13 @@ namespace StackTraceangelo.ProofOfConcept.Editor
                     return;
                 }
 
-                Clipboard.SetText(mainWindowViewModel.GenerateStackTraceArtClass());
+                string generatedClass = mainWindowViewModel.StackTraceArtGenerator.GenerateStackTraceArtClass(
+                                                            mainWindowViewModel.SpaceCharacterReplacement.ToString(CultureInfo.InvariantCulture),
+                                                            mainWindowViewModel.ExceptionName,
+                                                            mainWindowViewModel.ExceptionMessage,
+                                                            mainWindowViewModel.NormalizeAsciiArt().Reverse().ToArray());
+
+                Clipboard.SetText(generatedClass);
             }
 
             public bool CanExecute(object parameter)

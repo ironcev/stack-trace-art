@@ -103,10 +103,12 @@ namespace StackTraceangelo.ProofOfConcept.Editor
             private readonly char oldCharacter;
             private readonly MainWindowViewModel mainWindowViewModel;
 
-            private static IEnumerable<char> availableCharacters;
-            private static IEnumerable<char> AvailableCharacters
+            private IEnumerable<char> availableCharacters;
+            private IEnumerable<char> AvailableCharacters
             {
-                get { return availableCharacters ?? (availableCharacters = Enumerable.Range(char.MinValue, char.MaxValue).Select(Convert.ToChar).Where(MainWindowViewModel.IsValidCharacterForCSharpIdentifier)); }
+                get { return availableCharacters ?? (availableCharacters = Enumerable.Range(char.MinValue, char.MaxValue)
+                                                                                     .Select(Convert.ToChar)
+                                                                                     .Where(mainWindowViewModel.StackTraceArtGenerator.IsValidCharacter)); }
             }
 
             public ReplaceUserDefinedCharacterCommand(char oldCharacter, MainWindowViewModel mainWindowViewModel)

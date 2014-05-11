@@ -63,7 +63,7 @@
         </ItemsControl>
         <TextBox Grid.Row="5" Text="{Binding Path=Preview, Mode=OneWay}" IsReadOnly="True" FontFamily="{Binding Path=Font}"/>
         <StackPanel Grid.Row="6">
-            <Button Content="Generate the stack trace art class and copy it to the clipboard" Command="{Binding Path=GenerateCSharpCode}"/>
+            <Button Content="Generate the stack trace art class and copy it to the clipboard" Command="{Binding Path=GenerateStackTraceArtClass}"/>
         </StackPanel>
     </Grid>
 </Window>
