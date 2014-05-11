@@ -65,7 +65,7 @@ namespace StackTraceangelo.ProofOfConcept.Editor
 
         public string Preview
         {
-            get { return CreatePreview(); }
+            get { return ((StackTraceArtGenerator)StackTraceArtGenerators.CurrentItem).GeneratePreview(SpaceCharacterReplacement.ToString(), ExceptionName, ExceptionMessage, NormalizeAsciiArt()); }
         }
 
         public IEnumerable<InvalidCharacterViewModel> InvalidCharacters
@@ -132,30 +132,6 @@ namespace StackTraceangelo.ProofOfConcept.Editor
             return result.Select(Activator.CreateInstance).Cast<StackTraceArtGenerator>();
         }
 
-        private string CreatePreview()
-        {
-            StringBuilder sb = new StringBuilder();
-
-            sb.AppendFormat("{0} was unhandled", ExceptionName);
-            sb.AppendLine();
-            sb.AppendFormat("  Message={0}", ExceptionMessage);
-            sb.AppendLine();
-            sb.AppendLine("  Source=YourApplication");
-            sb.AppendLine("  StackTrace:");
-            sb.Append(GetStackTracePreviewOfAsciiArt());
-            sb.AppendLine(@"       at YourApplication.SomeClassInYourApplication.SomeMethodThatCallsTheArtMethod(string someArgument) in D:\Projects\YourApplication\Source\SomeClassInYourApplication.cs:line 57");
-            sb.AppendLine(@"       at YourApplication.Program.Main() in D:\Projects\YourApplication\Source\Program.cs:line 9");
-            sb.AppendLine(@"       at System.AppDomain._nExecuteAssembly(RuntimeAssembly assembly, String[] args)");
-            sb.AppendLine(@"       at System.AppDomain.ExecuteAssembly(String assemblyFile, Evidence assemblySecurity, String[] args)");
-            sb.AppendLine(@"       at Microsoft.VisualStudio.HostingProcess.HostProc.RunUsersAssembly()");
-            sb.AppendLine(@"       at System.Threading.ThreadHelper.ThreadStart_Context(Object state)");
-            sb.AppendLine(@"       at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean ignoreSyncCtx)");
-            sb.AppendLine(@"       at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)");
-            sb.AppendLine(@"       at System.Threading.ThreadHelper.ThreadStart()");
-            sb.AppendLine(@"  InnerException:");
-            return sb.ToString();
-        }
-
         public void ReplaceCharacter(char oldCharacter, char newCharacter)
         {
             AsciiArt = AsciiArt.Replace(oldCharacter, newCharacter);
@@ -166,18 +142,6 @@ namespace StackTraceangelo.ProofOfConcept.Editor
         private void FirePropertyChanged(string propertyName)
         {
             if (PropertyChanged != null) PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-        }
-
-        private string GetStackTracePreviewOfAsciiArt()
-        {
-            StringBuilder sb = new StringBuilder();
-            foreach (var normalizedAsciiArtLine in NormalizeAsciiArt())
-            {
-                sb.AppendFormat("       at {0}.{1} in :line 1", SpaceCharacterReplacement, normalizedAsciiArtLine);
-                sb.AppendLine();
-            }
-
-            return sb.ToString();
         }
 
         private IEnumerable<string> NormalizeAsciiArt()

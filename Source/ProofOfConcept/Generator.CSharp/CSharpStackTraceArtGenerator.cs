@@ -5,6 +5,7 @@
  */
 
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Text;
@@ -137,6 +138,42 @@ namespace StackTraceangelo.ProofOfConcept.Generator.CSharp
                     }
                     .SelectMany(x => x.GetTypes().Where(type => typeof(Exception).IsAssignableFrom(type)))
                     .Select(type => type.Name).ToArray();
+        }
+
+        public override string GeneratePreview(string className, string exceptionName, string exceptionMessage, IEnumerable<string> normalizedAsciiArt)
+        {
+            StringBuilder sb = new StringBuilder();
+
+            sb.AppendFormat("{0} was unhandled", exceptionName);
+            sb.AppendLine();
+            sb.AppendFormat("  Message={0}", exceptionMessage);
+            sb.AppendLine();
+            sb.AppendLine("  Source=YourApplication");
+            sb.AppendLine("  StackTrace:");
+            sb.Append(GetStackTracePreviewOfAsciiArt(className, normalizedAsciiArt));
+            sb.AppendLine(@"       at YourApplication.SomeClassInYourApplication.SomeMethodThatCallsTheArtMethod(string someArgument) in D:\Projects\YourApplication\Source\SomeClassInYourApplication.cs:line 57");
+            sb.AppendLine(@"       at YourApplication.Program.Main() in D:\Projects\YourApplication\Source\Program.cs:line 9");
+            sb.AppendLine(@"       at System.AppDomain._nExecuteAssembly(RuntimeAssembly assembly, String[] args)");
+            sb.AppendLine(@"       at System.AppDomain.ExecuteAssembly(String assemblyFile, Evidence assemblySecurity, String[] args)");
+            sb.AppendLine(@"       at Microsoft.VisualStudio.HostingProcess.HostProc.RunUsersAssembly()");
+            sb.AppendLine(@"       at System.Threading.ThreadHelper.ThreadStart_Context(Object state)");
+            sb.AppendLine(@"       at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean ignoreSyncCtx)");
+            sb.AppendLine(@"       at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)");
+            sb.AppendLine(@"       at System.Threading.ThreadHelper.ThreadStart()");
+            sb.AppendLine(@"  InnerException:");
+            return sb.ToString();
+        }
+
+        private static string GetStackTracePreviewOfAsciiArt(string className, IEnumerable<string> normalizedAsciiArt)
+        {
+            StringBuilder sb = new StringBuilder();
+            foreach (var normalizedAsciiArtLine in normalizedAsciiArt)
+            {
+                sb.AppendFormat("       at {0}.{1} in :line 1", className, normalizedAsciiArtLine);
+                sb.AppendLine();
+            }
+
+            return sb.ToString();
         }
     }
 }
