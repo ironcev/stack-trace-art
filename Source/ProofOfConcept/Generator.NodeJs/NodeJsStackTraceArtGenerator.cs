@@ -14,5 +14,10 @@ namespace StackTraceangelo.ProofOfConcept.Generator.NodeJs
         {
             get { return "NodeJS"; }
         }
+
+        public override string GenerateStackTraceArtClass(string className, string exceptionName, string exceptionMessage, string[] callStack)
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }
