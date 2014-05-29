@@ -1,0 +1,30 @@
+﻿@model  Type[]
+
+@{
+    ViewBag.Title = "Stack Trace Art Viewer";
+}
+
+<div>
+    <h1>@ViewBag.Title</h1>
+</div>
+
+<div>
+    @if (Model.Length <= 0)
+    {
+        <p>There are no Stack Trace Art class wrappers found in the "~/bin" directory. Did you forget to copy Stack Trace Art Gallery DLLs to the "~/bin" directory?</p>
+    }
+    else
+    {
+        using (Html.BeginForm("DrawStackTraceArt", "Home"))
+        {
+            foreach (Type stackTraceArtClassWrapperType in Model)
+            {
+                <input type="radio" name="StackTraceArtClassWrapperTypeFullName" value="@stackTraceArtClassWrapperType.FullName" />
+                <span>@stackTraceArtClassWrapperType.Name</span>
+                <br/>
+            }
+
+            <input type="submit" value="Draw selected Stack Trace Art" />
+        }
+    }
+</div>

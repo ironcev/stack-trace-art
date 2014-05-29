@@ -1,7 +1,7 @@
 ﻿<Window x:Class="StackTraceangelo.ProofOfConcept.Editor.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:Editor="clr-namespace:StackTraceangelo.ProofOfConcept.Editor"
+        xmlns:editor="clr-namespace:StackTraceangelo.ProofOfConcept.Editor"
         Title="stackTraceangelo [proof-of-concept]" Height="470" Width="630"
         Loaded="OnWindowLoaded" WindowStartupLocation="CenterScreen" WindowState="Maximized">
     <Grid>
@@ -35,7 +35,7 @@
         </Grid>
         <ItemsControl Grid.Row="4" FlowDirection="LeftToRight" ItemsSource="{Binding InvalidCharacters}">
             <ItemsControl.ItemTemplate>
-                <DataTemplate DataType="Editor:InvalidCharacterViewModel">
+                <DataTemplate DataType="editor:InvalidCharacterViewModel">
                     <StackPanel Orientation="Horizontal">
                         <TextBox Text="{Binding Path=Character, Mode=OneWay}" Width="Auto" IsReadOnly="True"/>
                         <Button Content="▼" Height="Auto" ToolTip="Replace with..." Click="OnButtonClick" Foreground="{Binding Path=ButtonForeground}">

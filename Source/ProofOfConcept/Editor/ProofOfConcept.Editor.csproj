@@ -61,7 +61,6 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="SpaceCharacterReplacementViewModel.cs" />
-    <Compile Include="StackTraceArtGeneratorsViewModel.cs" />
     <Page Include="CharacterReplacementDialog.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
