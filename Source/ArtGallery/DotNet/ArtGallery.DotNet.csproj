@@ -76,6 +76,10 @@
     <Compile Include="TheCatInTheSac.Wrapper.cs">
       <DependentUpon>TheCatInTheSac.cs</DependentUpon>
     </Compile>
+    <Compile Include="TheTwoHardestThingsToSayInLife.cs" />
+    <Compile Include="TheTwoHardestThingsToSayInLife.Wrapper.cs">
+      <DependentUpon>TheTwoHardestThingsToSayInLife.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CrossedFingers.Wrapper.cs">
@@ -147,6 +151,14 @@
     <None Include="..\NestedOm.png">
       <Link>ArtGallery\NestedOm.png</Link>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\TheTwoHardestThingsToSayInLife.png">
+      <Link>ArtGallery\TheTwoHardestThingsToSayInLife.png</Link>
+    </None>
+    <Content Include="TheTwoHardestThingsToSayInLife.txt">
+      <DependentUpon>TheTwoHardestThingsToSayInLife.cs</DependentUpon>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

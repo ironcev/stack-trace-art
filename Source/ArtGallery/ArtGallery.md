@@ -8,8 +8,12 @@ So, what are you still waiting for? **Start communicating yourself right away by
 
 The content of the gallery is given below. In order of appearance. Enjoy!
 
+##The Two Hardest Things to Say in Life ([requested](https://github.com/ironcev/stackTraceangelo/issues/1) by [@mroncev](https://github.com/mroncev))
+![Nested Om](TheTwoHardestThingsToSayInLife.png "The Two Hardest Things to Say in Life")
+<br/>
+
 ##Nested Om
-![NestedOm](NestedOm.png "Nested Om")
+![Nested Om](NestedOm.png "Nested Om")
 <br/>
 
 ##Crossed Fingers
