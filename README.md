@@ -1,35 +1,37 @@
 # stackTraceangelo
+*StackTraceangelo* is the World's first [Stack Trace Art](http://www.thehumbleprogrammer.com/stack-trace-art) editor. (To my knowledge at least.) Its name is the combination of the term [Stack Trace](https://en.wikipedia.org/wiki/Stack_trace) and the name of the famous renaissance artist [Michelangelo Buonarroti](https://en.wikipedia.org/wiki/Michelangelo).
 
-*StackTraceangelo* is a [Stack Trace Art](http://www.thehumbleprogrammer.com/stack-trace-art) editor.
+## About
+Stack Trace Art is the art of throwing an exception that creates a beautiful drawing on the caller's stack trace. You can read more about it in my [original blog post on Stack Trace Art](http://www.thehumbleprogrammer.com/stack-trace-art).
 
-## Communicate Yourself
-*StackTraceangelo* will help you to express and communicate yourself to other programmers in a very unique way - by drawing a piece of art on exception stack trace.
+The pieces of the finest Stack Trace Art given below should give you an idea of what Stack Trace Art is and what kind of exceptions you can easily create with *stackTraceangelo*. All those pieces of art are taken from the [*stackTraceangelo* Art Gallery](/Source/ArtGallery/ArtGallery.md).
 
-Just by using [the *stackTraceangelo* Art Gallery](/Source/ArtGallery/ArtGallery.md) you can easily:
+### Лулу и как се прави дъга
+This nostalgic childhood image was inspired by a beautiful Bulgarian poem found in [Petya Kokudeva's book "Lulu"](http://www.dailymotion.com/pkokudeva#video=xm47k7).
 
-* tell to your colleagues to [be careful the cat](http://www.youtube.com/watch?v=tPAJomPCdZs)
+![Лулу и как се прави дъга](Source/ArtGallery/LuluIKakSePraviDaga.png)
 
-    ![The Cat in the Sac](Source/ArtGallery/TheCatInTheSac.png  "The Cat in the Sac")
+### Keeping My Fingers Crossed
+Here is an artistic way to tell your colleagues that you are keeping your fingers crossed for them.
 
-* make them believe that Space Invaders actually did attack their program
+![Keeping my fingers crossed](Source/ArtGallery/CrossedFingers.png)
 
-    ![Space Invaders](Source/ArtGallery/SpaceInvaders.png "Space Invaders")
+### Let's Meditate Together
+Meditating together on the [sacred sound of ऊँ (Om)](https://en.wikipedia.org/wiki/Om) gets a different dimension when accompanied with the `NestedOmException`.
 
-* inject the burning heart of desire into the code of that French girl you like
+![Nested Om (ऊँ)](Source/ArtGallery/NestedOm.png)
 
-    ![The Burning Heart of Desire](Source/ArtGallery/TheBurningHeartOfDesire.png "The Burning Heart of Desire")
+### Good Job!
+Thinking of a unique way of congratulating your team members on a good job?
 
-* share one of your favorite Bulgarian poems with your team members
+![Good Job!](Source/ArtGallery/GoodJob.png)
 
-    ![Лулу и как се прави дъга](Source/ArtGallery/LuluIKakSePraviDaga.png "Лулу и как се прави дъга")
+### Be Careful The Cat
+Some pieces of wisdom ar worth repeating over and over again. [Be careful the cat!](http://www.youtube.com/watch?v=tPAJomPCdZs).
 
-* cross your fingers for your new project
-
-    ![Crossed Fingers](Source/ArtGallery/CrossedFingers.png "Crossed Fingers")
-
-* communicate [some other cool things as well](/Source/ArtGallery/ArtGallery.md)
+![Be careful the cat!](Source/ArtGallery/TheCatInTheSac.png)
 
 ## Rekindle Your Artistic Soul
-The best way to start rekindling your artistic soul and learn how to efficiently use *stackTraceangelo* is to visit [its official YouTube channel](http://www.youtube.com/user/stackTraceangelo). Although being in early proof-of-concept stage, *stackTraceangelo* is mature enough to help you draw your own piece of Stack Trace Art. So, **download it, create some cool pieces of Stack Trace Art and inject them into other programmer's code**.
+Stack Trace Art is all about rekindling our artistic programmer souls. Although being in an early proof-of-concept stage, *stackTraceangelo* is already mature enough to help you draw your own pieces of Stack Trace Art. In other words, to help you rekindle your artistic soul. So, download it, create some beautiful pieces of Stack Trace Art and inject them into other programmer's code!
 
-After you do so, please don't forget to share your art with me. I'll be happy to see it.
+You still do not feel ready to start creating your own Stack Trace Art? Don't worry. Every true artist experiences the Artist's Block. To overcome the block you can seek for inspiration at the [*stackTraceangelo* Art Gallery](/Source/ArtGallery/ArtGallery.md). Injecting some of the existing pieces of Stack Trace Art into your colleagues' code is a great way to [overcome the Artist's Block](https://www.wikihow.com/Overcome-Artist%27s-Block) ;-)
