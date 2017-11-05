@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2002
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArtGallery.DotNet", "ArtGallery\DotNet\ArtGallery.DotNet.csproj", "{760A59F6-FA9E-46D6-AC6D-EA805D725E9D}"
 EndProject
@@ -16,13 +16,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProofOfConcept.Generator.NodeJs", "ProofOfConcept\Generator.NodeJs\ProofOfConcept.Generator.NodeJs.csproj", "{F91669E4-59AE-4AA2-B1E4-1DC966782FA8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProofOfConcept.DotNet.AspDotNetArtViewer", "ProofOfConcept\DotNet.AspDotNetArtViewer\ProofOfConcept.DotNet.AspDotNetArtViewer.csproj", "{31F038CF-8101-42BD-885F-C0F96AA3282E}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{18076A29-8806-4F51-A1FD-4F72CD61296B}"
-	ProjectSection(SolutionItems) = preProject
-		.nuget\NuGet.Config = .nuget\NuGet.Config
-		.nuget\NuGet.exe = .nuget\NuGet.exe
-		.nuget\NuGet.targets = .nuget\NuGet.targets
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -107,5 +100,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {88A3EEC8-F4FB-4EA1-8351-CA859D1F15BD}
 	EndGlobalSection
 EndGlobal
