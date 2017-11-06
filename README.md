@@ -31,6 +31,13 @@ Some pieces of wisdom ar worth repeating over and over again. [Be careful the ca
 
 ![Be careful the cat!](Source/ArtGallery/TheCatInTheSac.png)
 
+## How Does It Work?
+How Stack Trace Art works? Are those exceptions really *real* exceptions or a some kind of a fake? Out of my experience, programmer's first reaction on Stack Trace Art, and I witnessed it many times, is mostly disbelief. "These cannot be real method calls. Do you rewrite the stack trace information somehow?" I do not :-) Stack Trace Art exceptions are genuine, regular, real programming exceptions. No tricks of any kind ;-)
+
+To understand the "magic" behind the Stack Trace Art exceptions [read this blog post: His Majesty, Hangul the Filler](http://thehumbleprogrammer.com/his-majesty-hangul-the-filler/).
+
+To understand the inner mechanics of the *stackTraceangelo* [read this blog post: Clarke's Third Law Exception - Step by Step](http://thehumbleprogrammer.com/clarkes-third-law-exception-step-by-step/).
+
 ## Rekindle Your Artistic Soul
 Stack Trace Art is all about rekindling our artistic programmer souls. Although being in an early proof-of-concept stage, *stackTraceangelo* is already mature enough to help you draw your own pieces of Stack Trace Art. In other words, to help you rekindle your artistic soul. So, download it, create some beautiful pieces of Stack Trace Art and inject them into other programmer's code!
 
