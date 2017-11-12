@@ -44,3 +44,6 @@ To understand the inner mechanics of the *stackTraceangelo* [read this blog post
 Stack Trace Art is all about rekindling our artistic programmer souls. Although being in an early proof-of-concept stage, *stackTraceangelo* is already mature enough to help you draw your own pieces of Stack Trace Art. In other words, to help you rekindle your artistic soul. So, download it, create some beautiful pieces of Stack Trace Art and inject them into other programmer's code!
 
 You still do not feel ready to start creating your own Stack Trace Art? Don't worry. Every true artist experiences the Artist's Block. To overcome the block you can seek for inspiration at the [*stackTraceangelo* Art Gallery](/Source/ArtGallery/README.md). Injecting some of the existing pieces of Stack Trace Art into your colleagues' code is a great way to [overcome the Artist's Block](https://www.wikihow.com/Overcome-Artist%27s-Block) ;-)
+
+## License
+*stackTraceangelo* is licensed under the [MIT license](LICENSE). The images in the [*stackTraceangelo* Art Gallery](/Source/ArtGallery/README.md) are licensed under the [Creative Commons CC BY 4.0 license](https://creativecommons.org/licenses/by/4.0/).

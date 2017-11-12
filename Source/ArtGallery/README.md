@@ -40,3 +40,6 @@ The stackTraceangelo's Art Gallery exhibits the finest pieces of the Stack Trace
 
 ## The Cat in the Sac
 ![The Cat in the Sac](TheCatInTheSac.png)
+
+# License
+All the images are licensed under the [Creative Commons CC BY 4.0 license](https://creativecommons.org/licenses/by/4.0/).
