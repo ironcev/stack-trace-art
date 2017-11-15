@@ -1,5 +1,5 @@
 # stackTraceangelo
-*StackTraceangelo* is the World's first [Stack Trace Art](http://www.thehumbleprogrammer.com/stack-trace-art) editor. (To my knowledge at least.) Its name is the combination of the term [Stack Trace](https://en.wikipedia.org/wiki/Stack_trace) and the name of the famous renaissance artist [Michelangelo Buonarroti](https://en.wikipedia.org/wiki/Michelangelo).
+*stackTraceangelo* is the World's first [Stack Trace Art](http://www.thehumbleprogrammer.com/stack-trace-art) editor. (To my knowledge at least.) Its name is the combination of the term [Stack Trace](https://en.wikipedia.org/wiki/Stack_trace) and the name of the famous renaissance artist [Michelangelo Buonarroti](https://en.wikipedia.org/wiki/Michelangelo).
 
 [![AppVeyor](https://img.shields.io/appveyor/ci/ironcev/stackTraceangelo.svg)](https://ci.appveyor.com/project/ironcev/stackTraceangelo)
 
