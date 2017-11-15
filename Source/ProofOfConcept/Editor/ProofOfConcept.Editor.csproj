@@ -60,6 +60,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="..\..\AssemblyInfo.Common.cs">
+      <Link>Properties\AssemblyInfo.Common.cs</Link>
+    </Compile>
     <Compile Include="SpaceCharacterReplacementViewModel.cs" />
     <Page Include="CharacterReplacementDialog.xaml">
       <SubType>Designer</SubType>

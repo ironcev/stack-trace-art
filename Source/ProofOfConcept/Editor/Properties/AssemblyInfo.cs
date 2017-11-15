@@ -1,17 +1,16 @@
-﻿using System.Reflection;
-using System.Runtime.InteropServices;
-using System.Windows;
-
-[assembly: AssemblyTitle("stackTraceangelo")]
-[assembly: AssemblyDescription("Stack Trace Art editor.")]
-[assembly: AssemblyConfiguration("")] // TODO-IG: Define proper assembly configuration.
-[assembly: AssemblyCompany("Igor Roncevic")]
-[assembly: AssemblyProduct("stackTraceangelo")]
-[assembly: AssemblyCopyright("Copyright © 2013 Igor Roncevic")]
-[assembly: AssemblyTrademark("")]
-
-[assembly: ComVisible(false)]
+﻿using System.Windows;
 
 [assembly: ThemeInfo(ResourceDictionaryLocation.None, ResourceDictionaryLocation.SourceAssembly)]
 
-[assembly: AssemblyVersion("0.1.*")]
+// ReSharper disable CheckNamespace
+internal static partial class AssemblyDescription
+{
+    public const string Title = "stackTraceangelo";
+
+    public const string Description = "The World's first Stack Trace Art editor.";
+
+    public const string Version = "0.1.0";
+
+    public const string InformationalVersion = Version;
+}
+// ReSharper restore CheckNamespace

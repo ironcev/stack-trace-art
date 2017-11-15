@@ -1,14 +1,12 @@
-﻿using System.Reflection;
-using System.Runtime.InteropServices;
+﻿// ReSharper disable CheckNamespace
+internal static partial class AssemblyDescription
+{
+    public const string Title = "stackTraceangelo .NET art viewer";
 
-[assembly: AssemblyTitle("StackTraceangelo .NET art viewer")]
-[assembly: AssemblyDescription("Viewer of the Stack Trace Art libraries that are stored in .NET assemblies.")]
-[assembly: AssemblyConfiguration("")] // TODO-IG: Define proper assembly configuration.
-[assembly: AssemblyCompany("Igor Roncevic")]
-[assembly: AssemblyProduct("stackTraceangelo")]
-[assembly: AssemblyCopyright("Copyright © 2013 Igor Roncevic")]
-[assembly: AssemblyTrademark("")]
+    public const string Description = "Viewer of the Stack Trace Art galleries that are stored in .NET assemblies.";
 
-[assembly: ComVisible(false)]
+    public const string Version = "0.1.0";
 
-[assembly: AssemblyVersion("0.1.*")]
+    public const string InformationalVersion = Version;
+}
+// ReSharper restore CheckNamespace

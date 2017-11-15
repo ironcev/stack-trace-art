@@ -46,6 +46,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\..\AssemblyInfo.Common.cs">
+      <Link>Properties\AssemblyInfo.Common.cs</Link>
+    </Compile>
     <Compile Include="CrossedFingers.cs" />
     <Compile Include="GoodJob.cs" />
     <Compile Include="GoodJob.Wrapper.cs">
