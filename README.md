@@ -45,5 +45,16 @@ Stack Trace Art is all about rekindling our artistic programmer souls. Although 
 
 You still do not feel ready to start creating your own Stack Trace Art? Don't worry. Every true artist experiences the Artist's Block. To overcome the block you can seek for inspiration at the [*stackTraceangelo* Art Gallery](/Source/ArtGallery/README.md). Injecting some of the existing pieces of Stack Trace Art into your colleagues' code is a great way to [overcome the Artist's Block](https://www.wikihow.com/Overcome-Artist%27s-Block) ;-)
 
+## Known Limitations
+The [first release (0.1.0)](https://github.com/ironcev/stackTraceangelo/releases/tag/v0.1.0) of the *stackTraceangelo* is just a proof of concept. Here are the main known limitations:
+
+- The edited Stack Trace Art cannot be neither saved nor opened.
+
+## Release Notes
+All notable changes to *stackTraceangelo* are documented in the [changelog](CHANGELOG.md). Below is the excerpt from the changelog that lists only the major changes.
+
+### 0.1.0
+- The first usable prototype that offers only the basic art editing.
+
 ## License
 *stackTraceangelo* is licensed under the [MIT license](LICENSE). The images in the [*stackTraceangelo* Art Gallery](/Source/ArtGallery/README.md) are licensed under the [Creative Commons CC BY 4.0 license](https://creativecommons.org/licenses/by/4.0/).
