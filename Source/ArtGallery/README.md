@@ -1,5 +1,10 @@
-# The stackTraceangelo's Art Gallery
+﻿# The stackTraceangelo's Art Gallery
 The stackTraceangelo's Art Gallery exhibits the finest pieces of the Stack Trace Art. The current exhibition showcases the following artwork, ordered in the reverse order of the artwork's historical appearance.
+
+## Good job!
+
+![Thumb Up!](ThumbUp.png)
+<br/>
 
 ## The Two Hardest Things to Say in Life ([requested](https://github.com/ironcev/stackTraceangelo/issues/1) by [@mroncev](https://github.com/mroncev))
 

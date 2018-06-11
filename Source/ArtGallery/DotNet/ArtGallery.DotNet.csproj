@@ -54,6 +54,10 @@
     <Compile Include="GoodJob.Wrapper.cs">
       <DependentUpon>GoodJob.cs</DependentUpon>
     </Compile>
+    <Compile Include="ThumbUp.cs" />
+    <Compile Include="ThumbUp.Wrapper.cs">
+      <DependentUpon>ThumbUp.cs</DependentUpon>
+    </Compile>
     <Compile Include="LuluIKakSePraviDaga.cs" />
     <Compile Include="LuluIKakSePraviDaga.Wrapper.cs">
       <DependentUpon>LuluIKakSePraviDaga.cs</DependentUpon>
