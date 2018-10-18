@@ -1,6 +1,6 @@
 # Stack Trace Art
 
-Stack Trace Art is the art of throwing exceptions that create beautiful drawings on callers' stack traces. You can read more about its origin in my [original blog post on Stack Trace Art](http://www.thehumbleprogrammer.com/stack-trace-art).
+Stack Trace Art is the art of throwing exceptions that create beautiful drawings on callers' stack traces. You can find more about it in my [original blog post on Stack Trace Art](http://www.thehumbleprogrammer.com/stack-trace-art) and [Daniel Temkin's essay on Esoteric.Codes](http://esoteric.codes/blog/stack-trace-art).
 
 [![AppVeyor](https://img.shields.io/appveyor/ci/ironcev/stacktraceangelo.svg)](https://ci.appveyor.com/project/ironcev/stacktraceangelo)
 [![GitHub release](https://img.shields.io/github/release/ironcev/stack-trace-art/all.svg)](https://github.com/ironcev/stack-trace-art/releases)
