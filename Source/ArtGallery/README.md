@@ -1,7 +1,7 @@
 ﻿# The stackTraceangelo's Art Gallery
 The stackTraceangelo's Art Gallery exhibits the finest pieces of the Stack Trace Art. The current exhibition showcases the following artwork, ordered in the reverse order of the artwork's historical appearance.
 
-## Good job!
+## Thumb Up!
 
 ![Thumb Up!](ThumbUp.png)
 <br/>
