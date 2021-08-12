@@ -1,6 +1,6 @@
 # Stack Trace Art
 
-Stack Trace Art is the art of throwing exceptions that create beautiful drawings on callers' stack traces. You can find more about it in my [original blog post on Stack Trace Art](http://www.thehumbleprogrammer.com/stack-trace-art) and [Daniel Temkin's essay on Esoteric.Codes](http://esoteric.codes/blog/stack-trace-art).
+Stack Trace Art is the art of throwing exceptions that create drawings on callers' stack traces. You can find more about it in my [original blog post on Stack Trace Art](http://www.thehumbleprogrammer.com/stack-trace-art) and [Daniel Temkin's essay on Esoteric.Codes](http://esoteric.codes/blog/stack-trace-art).
 
 ## Selected Pieces of the Finest Stack Trace Art
 
