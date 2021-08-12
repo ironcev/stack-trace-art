@@ -1,6 +1,6 @@
 # Stack Trace Art
 
-Stack Trace Art is the art of throwing exceptions that create drawings on callers' stack traces. You can find more about it in my [original blog post on Stack Trace Art](http://www.thehumbleprogrammer.com/stack-trace-art) and [Daniel Temkin's essay on Esoteric.Codes](http://esoteric.codes/blog/stack-trace-art).
+Stack Trace Art is the art of throwing exceptions that create drawings on callers' stack traces. You can find more about it in my [original blog post on Stack Trace Art](https://thp.im/stack-trace-art) and [Daniel Temkin's essay on Esoteric.Codes](http://esoteric.codes/blog/stack-trace-art).
 
 ## Selected Pieces of the Finest Stack Trace Art
 
@@ -36,9 +36,9 @@ Some pieces of wisdom are worth repeating over and over again. [Be careful the c
 ## How Does Stack Trace Art Work?
 Are those exceptions genuine exceptions or some clever fake? In my experience, programmer's first reaction on Stack Trace Art, and I witnessed it many times, is disbelief. "These cannot be real method calls. You rewrote the stack trace information somehow." I did not. Stack Trace Art exceptions are genuine, regular, real programming exceptions. No tricks of any kind.
 
-The "magic" behind the Stack Trace Art exceptions [is fully revealed in this blog post: His Majesty, Hangul the Filler](http://thehumbleprogrammer.com/his-majesty-hangul-the-filler/).
+The "magic" behind the Stack Trace Art exceptions [is fully revealed in this blog post: His Majesty, Hangul the Filler](https://thp.im/his-majesty-hangul-the-filler/).
 
-The inner mechanics of the *stackTraceangelo* [is explained in detail in this blog post: Clarke's Third Law Exception - Step by Step](http://thehumbleprogrammer.com/clarkes-third-law-exception-step-by-step/).
+The inner mechanics of the *stackTraceangelo* [is explained in detail in this blog post: Clarke's Third Law Exception - Step by Step](https://thp.im/clarkes-third-law-exception-step-by-step/).
 
 ## Rekindle Your Artistic Soul
 Stack Trace Art is all about rekindling our artistic programmer souls. Although (still) being in an early proof-of-concept stage, *stackTraceangelo* is already mature enough to help you draw your own pieces of Stack Trace Art. In other words, to help you rekindle your artistic soul. So, download it, create some beautiful pieces of Stack Trace Art and inject them into other programmer's code!
